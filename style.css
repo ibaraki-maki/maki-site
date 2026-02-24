@@ -1,0 +1,256 @@
+body{
+    font-family: sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px;
+    line-height: 1.8;
+}
+h1{
+    margin-top: 0;
+}
+a{
+    font-weight: bold;
+}
+
+.btn{
+  display: inline-block;
+  background: #8B4513;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn:hover{
+  opacity: 0.8;
+}
+
+.tel{
+  background: #2e7d32;
+}
+
+input, select, textarea{
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+}
+:root{
+  --text:#111827;
+  --muted:#6b7280;
+  --bg:#f6f5f2;
+  --card:#ffffff;
+  --line:#e5e7eb;
+  --main:#8B4513;
+  --tel:#2e7d32;
+}
+
+*{ box-sizing:border-box; }
+body{
+
+    
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.8;
+}
+
+/* Hero */
+.hero{
+  position:relative;
+  min-height: 340px;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hero__overlay{
+  position:absolute; inset:0;
+  background: rgba(0,0,0,.45);
+}
+.hero__inner{
+  position:relative;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 42px 16px 28px;
+  color:#fff;
+}
+.hero h1{
+  margin:0 0 8px;
+  font-size: 44px;
+  letter-spacing: .02em;
+}
+.hero__lead{
+  margin:0;
+  font-size: 18px;
+  opacity:.95;
+}
+.hero__cta{
+  margin-top: 16px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+/* Layout */
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 18px 16px 110px;
+}
+.split{
+  display:flex;
+  flex-direction: column;
+
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  margin-top: 40px;
+}
+.split__img img{
+  width:100%;
+  max-width: 700px;
+  border-radius: 12px;
+  height:auto;
+  border-radius: 12px;
+  border:1px solid var(--line);
+  display:block;
+}
+.caption{
+  margin:8px 0 0;
+  color:var(--muted);
+  font-size: 13px;
+}
+.split__text{
+  padding: 6px 2px;
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.06);
+}
+h2{ margin:0 0 10px; font-size: 22px; }
+h3{ margin:14px 0 8px; font-size: 16px; }
+
+.list{
+  margin:0;
+  padding-left: 18px;
+}
+.note{
+  margin: 10px 0 0;
+  color:var(--muted);
+  font-size: 13px;
+}
+
+.price{
+  border:1px solid var(--line);
+  border-radius: 10px;
+  overflow:hidden;
+  margin-bottom: 10px;
+}
+.price__row{
+  display:flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background:#fff;
+}
+.price__row + .price__row{
+  border-top:1px solid var(--line);
+}
+.price__row strong{
+  font-size: 18px;
+}
+
+/* Buttons */
+.btn{
+  display:inline-block;
+  padding: 12px 16px;
+  border-radius: 10px;
+  text-decoration:none;
+  font-weight: 700;
+  background:var(--main);
+  color:#fff;
+}
+.btn:hover{ opacity:.92; }
+.btn.tel{ background:var(--tel); }
+.btn.ghost{
+  background: transparent;
+  border:1px solid rgba(255,255,255,.6);
+}
+
+/* Bottom fixed bar */
+.fixedbar{
+  position:fixed;
+  left:0; right:0; bottom:0;
+  background: rgba(255,255,255,.92);
+  border-top:1px solid var(--line);
+  backdrop-filter: blur(8px);
+  padding: 10px 12px;
+}
+.fixedbar__inner{
+  max-width: 980px;
+  margin:0 auto;
+  display:flex;
+  gap:10px;
+}
+.fixedbar__inner a{
+  flex:1;
+  text-align:center;
+}
+
+/* Responsive */
+@media (max-width: 820px){
+  .split{ grid-template-columns: 1fr; }
+  .hero h1{ font-size: 34px; }
+}
+
+/* --- Center fix (force) --- */
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px 120px;
+}
+
+.split{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 22px !important;
+  margin: 32px auto !important;
+  width: 100% !important;
+}
+
+.split__img,
+.split__text{
+  width: 100% !important;
+  max-width: 720px !important;
+  margin: 0 auto !important;
+}
+
+.split__img img{
+  display: block !important;
+  width: 100% !important;
+  max-width: 720px !important;
+  margin: 0 auto !important;
+  border-radius: 14px;
+}
+
+.card{
+  width: 100% !important;
+  max-width: 520px !important;
+  margin: 0 auto !important;
+}
+
+body {
+  max-width: 900px;
+  margin: auto;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 32px;
+}
+
